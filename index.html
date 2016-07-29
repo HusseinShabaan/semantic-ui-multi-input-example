@@ -31,7 +31,7 @@
 							</div>
 						</div>
 						<div class="field">
-						<button class="ui icon button" onClick="appendCert(this)" title="Add"><i class="add black icon"></i></button>
+						<button class="ui icon button" onClick="appendCert(this)" title="Add" type="button"><i class="add black icon"></i></button>
 					  	</div>
 					</div>
 				</div>
@@ -40,7 +40,7 @@
 	</div>
 <script>
 function appendCert(button) {
-	$(' <div class="three fields"><div class="field"><input placeholder="name" type="text" name="name[]"></div><div class="field"><div class="ui selection dropdown"><input placeholder="option" type="hidden" name="option[]"><i class="dropdown icon"></i><div class="default text">option</div><div class="menu"><div class="item" data-value="1">Week</div><div class="item" data-value="2">Good</div><div class="item" data-value="3">Very Good</div><div class="item" data-value="4">Excellent</div></div></div></div><div class="field"><button class="ui icon button" title="Add" onClick="appendCert(this)"><i class="add black icon"></i></button><button class="ui icon button" onClick="removeCert(this)" title="Remove Certificate"><i class="minus black icon"></i></button></div></div> ').insertAfter($(button).parent().parent()).hide().fadeIn(500);
+	$(' <div class="three fields"><div class="field"><input placeholder="name" type="text" name="name[]"></div><div class="field"><div class="ui selection dropdown"><input placeholder="option" type="hidden" name="option[]"><i class="dropdown icon"></i><div class="default text">option</div><div class="menu"><div class="item" data-value="1">Week</div><div class="item" data-value="2">Good</div><div class="item" data-value="3">Very Good</div><div class="item" data-value="4">Excellent</div></div></div></div><div class="field"><button class="ui icon button" title="Add" onClick="appendCert(this)" type="button"><i class="add black icon"></i></button><button class="ui icon button" onClick="removeCert(this)" title="Remove Certificate"><i class="minus black icon" type="button"></i></button></div></div> ').insertAfter($(button).parent().parent()).hide().fadeIn(500);
 	$('.ui.dropdown').dropdown();
 }
 
